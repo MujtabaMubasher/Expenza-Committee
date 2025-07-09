@@ -3,38 +3,45 @@ Flask==2.3.2
 gunicorn==20.1.0
 Werkzeug==2.3.7
 setuptools==68.2.2  # Essential for Python 3.10 builds
+wheel==0.41.2  # Required for proper package installation
 
 # ===== COMPATIBILITY LAYER =====
 numpy==1.24.4  # TensorFlow 2.13's required version
 protobuf==3.20.3  # Resolves TensorFlow compatibility issues
 typing-extensions==4.5.0  # Required for PyTorch 2.0
+absl-py==1.4.0  # Required by TensorFlow
 
 # ===== MACHINE LEARNING =====
 tensorflow-cpu==2.13.0
 torch==2.0.1+cpu  # CPU-only version (smaller footprint)
 scikit-learn==1.0.2
 keras==2.13.1  # Included for explicit compatibility
+grpcio==1.54.2  # Required by TensorFlow
 
 # ===== COMPUTER VISION =====
 opencv-python==4.8.0.86
 Pillow==9.5.0
 deepface==0.0.79
 mtcnn==0.1.1
+retina-face==0.0.15  # Required by DeepFace
 
 # ===== ESSENTIAL UTILITIES =====
 pandas==1.5.3
 requests==2.31.0
 python-dateutil==2.8.2
 six==1.16.0  # Required by many ML packages
+certifi==2023.7.22  # Required for SSL verification
 
 # ===== OPTIONAL COMPONENTS =====
 # Google APIs (remove if unused)
 google-auth==2.20.0
 google-api-python-client==2.85.0
+google-auth-httplib2==0.1.0
 
 # NLP (remove if unused)
 transformers==4.30.2
 tokenizers==0.13.3
+sentencepiece==0.1.99  # Required by some transformers models
 
 # Scientific Computing
 scipy==1.10.1
