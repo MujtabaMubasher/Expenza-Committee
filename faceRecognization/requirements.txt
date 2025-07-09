@@ -82,7 +82,7 @@ soupsieve==2.7
 sympy==1.14.0
 tensorboard==2.19.0
 tensorboard-data-server==0.7.2
-tensorflow==2.15.0
+tensorflow-cpu==2.13.0
 tensorflow-io-gcs-filesystem==0.31.0
 termcolor==3.1.0
 tf_keras==2.19.0
@@ -96,5 +96,4 @@ tzdata==2025.2
 uritemplate==4.2.0
 urllib3==2.2.1
 Werkzeug==3.0.3
-uv==0.2.35
 wrapt==1.17.2
