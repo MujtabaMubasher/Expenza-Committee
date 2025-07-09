@@ -28,7 +28,7 @@ joblib==1.5.1
 kiwisolver==1.4.8
 matplotlib==3.10.3
 mtcnn==1.0.0
-numpy==1.26.4
+numpy==1.24.4
 opencv-python>=4.8.0.86
 pandas==1.5.3  # Downgraded for Python 3.9
 Pillow==11.2.1
