@@ -1,34 +1,42 @@
-# Core Packages
+# ===== CORE DEPENDENCIES =====
 Flask==2.3.2
 gunicorn==20.1.0
 Werkzeug==2.3.7
+setuptools==68.2.2  # Essential for Python 3.10 builds
 
-# Machine Learning & Deep Learning
+# ===== COMPATIBILITY LAYER =====
+numpy==1.24.4  # TensorFlow 2.13's required version
+protobuf==3.20.3  # Resolves TensorFlow compatibility issues
+typing-extensions==4.5.0  # Required for PyTorch 2.0
+
+# ===== MACHINE LEARNING =====
 tensorflow-cpu==2.13.0
-torch==2.0.1+cpu  # CPU-only version
+torch==2.0.1+cpu  # CPU-only version (smaller footprint)
 scikit-learn==1.0.2
+keras==2.13.1  # Included for explicit compatibility
+
+# ===== COMPUTER VISION =====
 opencv-python==4.8.0.86
+Pillow==9.5.0
 deepface==0.0.79
 mtcnn==0.1.1
 
-# Computer Vision & Image Processing
-Pillow==9.5.0
-numpy==1.24.4  # Required by TensorFlow 2.13
-
-# Utilities & Helpers
+# ===== ESSENTIAL UTILITIES =====
 pandas==1.5.3
 requests==2.31.0
 python-dateutil==2.8.2
-setuptools==68.2.2  # Explicitly required for builds
+six==1.16.0  # Required by many ML packages
 
-# Google API Packages (if needed)
+# ===== OPTIONAL COMPONENTS =====
+# Google APIs (remove if unused)
 google-auth==2.20.0
 google-api-python-client==2.85.0
 
-# Natural Language Processing
+# NLP (remove if unused)
 transformers==4.30.2
 tokenizers==0.13.3
 
-# Math & Scientific Computing
+# Scientific Computing
 scipy==1.10.1
 matplotlib==3.7.2
+h5py==3.9.0  # Required for model saving/loading
